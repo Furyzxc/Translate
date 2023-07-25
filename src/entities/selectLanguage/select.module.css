@@ -1,0 +1,26 @@
+.selectLanguage {
+    margin-left: 10px;
+    display: flex;
+}
+
+.arrow {
+    border-radius: 100px;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    padding: 10px 0 0 10px;
+}
+
+.arrow:hover {
+    background-color: #F3F4F4;
+}
+
+.down {
+    transition: rotate 0.3s;
+    rotate: 0deg;
+}
+
+.up {
+    transition: rotate 0.3s;
+    rotate: 180deg;
+}

@@ -1,0 +1,15 @@
+.swap {
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.swap:hover {
+    background-color: #F3F4F4;
+}
+
+.icon {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}

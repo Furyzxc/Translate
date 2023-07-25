@@ -1,0 +1,104 @@
+.language {
+    cursor: pointer;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: pre;
+    width: auto;
+    word-break: normal;
+    position: relative;
+    padding: 4px;
+}
+
+.selected {
+    position: relative;
+    display: block;
+    color: rgb(26,115,232);
+}
+
+.hidden::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+    opacity: 0;
+}
+
+.selected::after {
+    position: absolute;
+    opacity: 1;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.button:hover {
+    background-color: #F3F4F4;
+    color: #202124;
+}
+
+.button {
+    color: #9B9DA1;
+    text-size-adjust: 100%;
+    visibility: visible;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    background: none;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 1;
+    flex: 0 1 auto;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.25rem;
+    letter-spacing: .0178571429em;
+    text-transform: none;
+    min-width: auto;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    padding: 0 8px;
+}
+
+.dropLanguage {
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+}

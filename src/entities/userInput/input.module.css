@@ -1,0 +1,38 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 27px;
+    min-height: 164px;
+    position: relative;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.container {
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.userInput {
+    position: relative;
+}
+
+.clear {
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    padding: 12px 0 0 12px;
+}
+
+.clear:hover {
+    background-color: #F3F4F4;
+}
