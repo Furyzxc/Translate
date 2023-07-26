@@ -9,6 +9,7 @@
     height: 45px;
     width: 45px;
     padding: 10px 0 0 10px;
+    user-select: none;
 }
 
 .arrow:hover {
