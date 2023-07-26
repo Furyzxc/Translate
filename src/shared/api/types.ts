@@ -12,3 +12,9 @@ export interface TranslateResponseBody {
         translatedText: string
     }
 }
+
+export interface TranslateRequestBody {
+    sourceLanguageCode: string | null
+    targetLanguageCode: string | null
+    text: string | null
+}

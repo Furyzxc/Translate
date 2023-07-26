@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '@/shared/style/style.css'
-import { App } from './app.tsx'
 import { appStore } from "./appStore.ts";
+import { appRouter } from "@/app/appRouter.tsx";
 import { Provider as ReduxProvider } from "react-redux";
-import { requestLanguages } from "@/features/languages/languages-thunks.ts";
+import { requestLanguages } from "@/slices/languages/languages-thunks.ts";
+import { RouterProvider } from "react-router-dom";
 
 const root = document.getElementById('root')!
 
@@ -16,7 +17,7 @@ initApp().then(() =>
     ReactDOM.createRoot(root).render(
         <React.StrictMode>
             <ReduxProvider store={appStore}>
-                <App/>
+                <RouterProvider router={appRouter}/>
             </ReduxProvider>
         </React.StrictMode>,
     ))

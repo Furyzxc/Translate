@@ -1,7 +1,7 @@
 import s from './ui.module.css'
 import { useAppDispatch } from "@/shared/model/hooks.ts";
-import { setSourceLang, setTargetLang } from "@/features/languages/languages-thunks.ts";
-import { changeLanguageList } from "@/features/languages/languages-slice.ts";
+import { setSourceLang, setTargetLang } from "@/slices/languages/languages-thunks.ts";
+import { changeLanguageList } from "@/slices/languages/languages-slice.ts";
 
 interface PropsType {
     code: string
