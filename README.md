@@ -1,4 +1,4 @@
-# Recreated Google Translate
+# World Wide Words
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -17,7 +17,7 @@ A recreation of Google Translate using React, Redux, TypeScript, Material-UI, HT
 
 ## Introduction
 
-Recreated Google Translate is a web application that allows users to translate text between different languages. The application is built using React, Redux, Material-UI, HTML, CSS, and TypeScript, and it utilizes the Text Translator API to provide accurate translations.
+World wide words is a web application that allows users to translate text between different languages. The application is built using React, Redux, Material-UI, HTML, CSS, and TypeScript, and it utilizes the Text Translator API to provide accurate translations.
 
 ## Demo
 
