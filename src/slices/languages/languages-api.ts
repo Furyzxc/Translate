@@ -19,3 +19,5 @@ export const languagesApi = baseApi.injectEndpoints({
         })
     })
 })
+
+export const { useTranslateMutation } = languagesApi

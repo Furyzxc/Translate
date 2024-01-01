@@ -4,8 +4,11 @@ import { UserInput } from "@/entities/userInput";
 import { UserOutput } from "@/entities/userOutput";
 import { useAppSelector } from "@/shared/model/hooks.ts";
 import { selectDropDownListState } from "@/slices/dropdownList/dropdownList-selects.ts";
+import { useTranslateMutation } from "@/slices/languages/languages-api.ts";
 
 export const TranslationBlock = () => {
+
+    const [requestTranslate, { data, isLoading }] = useTranslateMutation()
 
     const { showList } = useAppSelector(selectDropDownListState)
 
@@ -15,9 +18,9 @@ export const TranslationBlock = () => {
             <DropLanguages/>
             <div className={showList ? 'hidden' : ''}>
                 <div className='user-inputs'>
-                    <UserInput/>
+                    <UserInput requestTranslate={requestTranslate}/>
                     {/* Component to display the translation output */}
-                    <UserOutput/>
+                    <UserOutput data={data} isLoading={isLoading}/>
                 </div>
             </div>
         </div>

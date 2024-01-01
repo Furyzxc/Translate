@@ -9,8 +9,6 @@ import { selectDropDownListState } from "@/slices/dropdownList/dropdownList-sele
 /**
  * Component for displaying a drop-down list of available languages.
  * The list can be filtered based on a search term provided by the user.
- *
- * @returns {JSX.Element | null} The JSX element representing the DropLanguages component, or null if showList is false.
  */
 export const DropLanguages = () => {
     // whole list of languages
